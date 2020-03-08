@@ -31,6 +31,6 @@ def full?(board)
  if board.any?{|board_index| board_index == nil || board_index = " "}
    return false
  else
-   return false
+   return true
  end
 end
