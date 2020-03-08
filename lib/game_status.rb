@@ -28,7 +28,7 @@ def won?(board)
 end
 
 def full?(board)
-  position_taken?(board, index).all? do |position|
-    return true
+  board.all? do
+    if board[positions]
   end
 end
