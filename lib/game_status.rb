@@ -28,7 +28,7 @@ def won?(board)
 end
 
 def full?(board)
- if board.any?{|board_index| board_index == nil || board_index = " " || board_index = ""}
+ if board.any?{|board_index| board_index == nil || board_index = " " || board_index = ""} && !draw?(board)
    return false
  else
    return true
