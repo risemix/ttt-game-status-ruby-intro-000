@@ -28,7 +28,9 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do
-    if board[positions]
-  end
+ if board.any? do |index|
+   index = nil || index = " "
+ else
+   return true
+ end
 end
