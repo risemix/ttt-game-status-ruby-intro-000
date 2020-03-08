@@ -55,6 +55,6 @@ end
 
 def winner?(board)
   if won?(board)
-    return board[won?(wincombo)[0]]
+    return board
   end
 end
