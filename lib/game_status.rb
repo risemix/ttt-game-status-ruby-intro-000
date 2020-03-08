@@ -34,3 +34,11 @@ def full?(board)
    return true
  end
 end
+
+def over?(board)
+  if won? = true || full? = true
+    return true
+  else
+    return false
+  end
+end
