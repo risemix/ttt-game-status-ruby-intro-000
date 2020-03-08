@@ -28,5 +28,7 @@ def won?(board)
 end
 
 def full?(board)
-  position_taken?(board).all
+  if position_taken?(board).all do
+    return true
+  end
 end
