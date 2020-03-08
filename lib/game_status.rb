@@ -57,8 +57,8 @@ end
 
 def winner?(board)
   if won?(board) && winningplayer = 1
-    return "X"
+    return O
   elsif won?(board) && winningplayer = 2
-    return "O"
+    return O
   end
 end
