@@ -24,5 +24,9 @@ def won?(board)
       return wincombo
     end
   end
-  false
+  return false
+end
+
+def full?(board)
+  position_taken?(board).all
 end
