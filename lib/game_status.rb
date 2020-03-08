@@ -28,11 +28,9 @@ def won?(board)
 end
 
 def full?(board)
- if board.any? do |index|
-   if index = nil || index = " "
-    return true
-   else
-    return false
-  end
+ if board.any?{|board_index| board_index == nil || board_index = " "}
+   return false
+ else
+   return false
  end
 end
