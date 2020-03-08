@@ -23,7 +23,7 @@ def won?(board)
      elsif (board[wincombo[0]]) == "O" && (board[wincombo[1]]) == "O" && (board[wincombo[2]]) == "O"
        return win_combination
      else
-       return falsey
+       return false
      end
    end
 end
