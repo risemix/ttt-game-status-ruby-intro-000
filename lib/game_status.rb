@@ -30,7 +30,7 @@ end
 def full?(board)
  if board.any?{|board_index| board_index == nil || board_index = " " || board_index = ""}
    return false
- elsif board.any?{|board_index| board_index != nil || board_index != " " || board_index != ""} && !won(board)
+ elsif board.all?{|board_index| board_index = "X" || board_index = "O"} && !won(board)
    return true
  end
 end
