@@ -31,7 +31,8 @@ def full?(board)
  if board.any?{|board_index| board_index == nil || board_index = " " || board_index = ""}
    return false
  elsif board.any?{|board_index| board_index != nil || board_index != " " || board_index != ""} && !won(board)
- true
+   return true
+ end
 end
 
 def draw?(board)
