@@ -28,18 +28,21 @@ def won?(board)
 end
 
 def full?(board)
- if board.any?{|board_index| board_index == nil || board_index = " " || board_index = ""}
-   return false
- elsif board.all?{|board_index| board_index = "X" || board_index = "O"} && !won(board)
-   return true
- end
+  if board.any? {|index| index == nil || index == " "}
+    return false
+  else
+    return true
+  end
 end
 
 def draw?(board)
   if full?(board) && !won?(board)
     return true
+  elsif !full?(board) && !won?(board)
+    return false
+  else
+    return false
   end
-  false
 end
 
 def over?(board)
